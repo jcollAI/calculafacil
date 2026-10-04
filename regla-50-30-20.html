@@ -1,0 +1,64 @@
+<!doctype html><html lang="ca"><head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-509335397390800"
+     crossorigin="anonymous"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Control d’economia i pressupost | CalculaFàcil</title>
+<meta name="description" content="Distribueix els teus ingressos amb percentatges personalitzats. Pots usar 50/30/20 o crear la teva pròpia distribució.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header><a class="logo" href="index.html">Calcula<span>Fàcil</span></a><nav><a href="index.html#eines">Eines</a><a href="guies.html">Guies</a><a href="sobre.html">Sobre</a></nav></header>
+<main class="tool">
+<p class="eyebrow">DINERS</p>
+<h1 class="tool-title">Control d’economia</h1>
+<p class="tool-intro">Organitza els teus ingressos mensuals. Pots començar amb la regla 50/30/20 o canviar els percentatges i adaptar-los a la teva situació.</p>
+
+<div class="toolbox">
+<div class="field"><label for="ingressos">Ingressos nets mensuals (€)</label><input id="ingressos" type="number" min="0" step="0.01" placeholder="Ex. 1500"></div>
+
+<div class="row">
+<div class="field"><label for="p1">Necessitats (%)</label><input id="p1" type="number" min="0" max="100" step="0.1" value="50"></div>
+<div class="field"><label for="p2">Despeses personals (%)</label><input id="p2" type="number" min="0" max="100" step="0.1" value="30"></div>
+</div>
+<div class="row">
+<div class="field"><label for="p3">Estalvi / inversió (%)</label><input id="p3" type="number" min="0" max="100" step="0.1" value="20"></div>
+<div class="field"><label>Total assignat</label><div id="totalPct" style="font-size:1.35rem;font-weight:700;padding:10px 0">100%</div></div>
+</div>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+<button onclick="preset(50,30,20)">Regla 50/30/20</button>
+<button onclick="preset(60,20,20)">60/20/20</button>
+<button onclick="calc()">Calcular pressupost</button>
+</div>
+<div class="result" id="result">Introdueix els ingressos i adapta els percentatges si ho necessites.</div>
+</div>
+
+<article class="article">
+<h2>Què és el control d’economia?</h2>
+<p>Aquesta eina reparteix els teus ingressos en tres blocs. La distribució 50/30/20 és només un punt de partida: pots canviar qualsevol percentatge.</p>
+<h2>Com es pot utilitzar?</h2>
+<p>Introdueix els ingressos nets mensuals i decideix quin percentatge vols destinar a necessitats, despeses personals i estalvi o inversió. Els tres percentatges han de sumar 100%.</p>
+<h2>Exemple</h2>
+<p>Amb 1.500 € i una distribució 50/30/20, el pressupost orientatiu seria 750 € per necessitats, 450 € per despeses personals i 300 € per estalvi o inversió.</p>
+<p><small>Aquesta eina serveix per organitzar un pressupost personal i no és assessorament financer.</small></p>
+</article></main>
+<footer><div class="logo">Calcula<span>Fàcil</span></div><p>Eines pràctiques per a càlculs quotidians.</p><div><a href="sobre.html">Sobre</a> · <a href="contacte.html">Contacte</a> · <a href="privacitat.html">Privacitat</a> · <a href="cookies.html">Cookies</a> · <a href="termes.html">Termes</a></div><small>© 2026 CalculaFàcil</small></footer>
+<script>
+const E=id=>document.getElementById(id);
+function updateTotal(){
+ const s=[1,2,3].reduce((a,i)=>a+(Number(E('p'+i).value)||0),0);
+ E('totalPct').textContent=s.toFixed(1).replace('.0','')+'%';
+}
+[1,2,3].forEach(i=>E('p'+i).addEventListener('input',updateTotal));
+function preset(a,b,c){E('p1').value=a;E('p2').value=b;E('p3').value=c;updateTotal();calc();}
+function eur(x){return x.toLocaleString('ca-ES',{style:'currency',currency:'EUR'});}
+function calc(){
+ const inc=Number(E('ingressos').value), p1=Number(E('p1').value),p2=Number(E('p2').value),p3=Number(E('p3').value);
+ const total=p1+p2+p3;
+ if(!inc||inc<=0){E('result').innerHTML='Introdueix uns ingressos mensuals vàlids.';return}
+ if([p1,p2,p3].some(x=>x<0)||Math.abs(total-100)>0.001){E('result').innerHTML='<b>Els percentatges han de sumar 100%.</b><br>Ara mateix sumen '+total.toFixed(1).replace('.0','')+'%.';return}
+ E('result').innerHTML='<b>Distribució mensual</b><br><br>'+
+ '🏠 Necessitats ('+p1+'%): <b>'+eur(inc*p1/100)+'</b><br>'+
+ '🎯 Despeses personals ('+p2+'%): <b>'+eur(inc*p2/100)+'</b><br>'+
+ '💰 Estalvi / inversió ('+p3+'%): <b>'+eur(inc*p3/100)+'</b><br><br>'+
+ 'En un any, si mantinguessis aquesta distribució, destinarias aproximadament <b>'+eur(inc*p3/100*12)+'</b> a estalvi o inversió.';
+}
+updateTotal();
+</script></body></html>

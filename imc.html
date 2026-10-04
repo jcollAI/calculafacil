@@ -1,0 +1,58 @@
+<!doctype html><html lang="ca"><head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-509335397390800"
+     crossorigin="anonymous"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Calculadora d’IMC | CalculaFàcil</title><meta name="description" content="Càlcul orientatiu per a adults de manera ràpida i gratuïta amb CalculaFàcil."><link rel="stylesheet" href="styles.css"></head><body><header><a class="logo" href="index.html">Calcula<span>Fàcil</span></a><nav><a href="index.html#eines">Eines</a><a href="guies.html">Guies</a></nav></header><main class="tool"><p class="eyebrow">CALCULADORA GRATUÏTA</p><h1 style="font-size:48px;letter-spacing:-2px">Calculadora d’IMC</h1><p>Càlcul orientatiu per a adults.</p><div class="toolbox"><div class="row"><div class="field"><label>Pes (kg)</label><input id="a" type="number" step="any"></div><div class="field"><label>Alçada (cm)</label><input id="b" type="number" step="any"></div></div><button onclick="calc()">Calcular</button><div class="result" id="result">Introdueix les dades i prem Calcular.</div></div><article class="article"><h2>Com utilitzar aquesta calculadora</h2><p>Introdueix els valors als camps superiors i prem <b>Calcular</b>. El resultat apareixerà immediatament. Aquesta eina està pensada per facilitar càlculs quotidians i oferir una estimació clara.</p><h2>Exemple pràctic</h2><p>Pots provar diferents valors tantes vegades com vulguis. Revisa sempre les dades introduïdes, especialment quan utilitzis el resultat per prendre decisions econòmiques o acadèmiques.</p><h2>Preguntes freqüents</h2><h3>He de registrar-me?</h3><p>No. Les eines bàsiques de CalculaFàcil es poden utilitzar sense crear cap compte.</p><h3>Es guarden les dades?</h3><p>Aquesta calculadora fa el càlcul directament al navegador i no necessita enviar els valors introduïts a un servidor.</p></article></main>
+<section class="article">
+<h2>Què significa el resultat?</h2>
+<p>No et mostrem només el número. També indiquem en quin rang orientatiu es troba l’IMC: menys de 18,5; de 18,5 a 24,9; de 25 a 29,9; de 30 a 34,9; de 35 a 39,9; o 40 i superior.</p>
+<p>Per exemple, un <strong>IMC de 22</strong> es troba dins del rang habitual de 18,5 a 24,9 per a adults. L’IMC és només una referència general i no és un diagnòstic mèdic.</p>
+</section>
+<footer><a href="privacitat.html">Privacitat</a> · <a href="cookies.html">Cookies</a> · <a href="contacte.html">Contacte</a><p>© 2026 CalculaFàcil</p></footer><script>
+function calc(){
+  const pes = Number(document.getElementById('pes').value);
+  let altura = Number(document.getElementById('altura').value);
+  const result = document.getElementById('result');
+
+  if(!pes || !altura || pes <= 0 || altura <= 0){
+    result.innerHTML = 'Introdueix un pes i una alçada vàlids.';
+    return;
+  }
+
+  // Accepta alçada en cm o metres.
+  if(altura > 3) altura = altura / 100;
+
+  const imc = pes / (altura * altura);
+  let categoria = '';
+  let explicacio = '';
+
+  if(imc < 18.5){
+    categoria = 'Pes baix';
+    explicacio = 'Segons la classificació habitual de l’IMC per a adults, aquest valor està per sota del rang considerat habitual.';
+  } else if(imc < 25){
+    categoria = 'Pes dins del rang habitual';
+    explicacio = 'Segons la classificació habitual de l’IMC per a adults, aquest valor es troba dins del rang de 18,5 a 24,9.';
+  } else if(imc < 30){
+    categoria = 'Sobrepès';
+    explicacio = 'Segons la classificació habitual de l’IMC per a adults, aquest valor es troba entre 25 i 29,9.';
+  } else if(imc < 35){
+    categoria = 'Obesitat grau I';
+    explicacio = 'Segons la classificació habitual de l’IMC per a adults, aquest valor es troba entre 30 i 34,9.';
+  } else if(imc < 40){
+    categoria = 'Obesitat grau II';
+    explicacio = 'Segons la classificació habitual de l’IMC per a adults, aquest valor es troba entre 35 i 39,9.';
+  } else {
+    categoria = 'Obesitat grau III';
+    explicacio = 'Segons la classificació habitual de l’IMC per a adults, aquest valor és de 40 o superior.';
+  }
+
+  const minHabitual = 18.5 * altura * altura;
+  const maxHabitual = 24.9 * altura * altura;
+
+  result.innerHTML =
+    '<b>IMC: ' + imc.toFixed(1) + '</b><br>' +
+    '<strong>' + categoria + '</strong><br><br>' +
+    explicacio + '<br><br>' +
+    'Per a una alçada de ' + altura.toFixed(2) + ' m, el rang de pes corresponent a un IMC de 18,5–24,9 és aproximadament de <b>' +
+    minHabitual.toFixed(1) + ' a ' + maxHabitual.toFixed(1) + ' kg</b>.<br><br>' +
+    '<small>L’IMC és una mesura orientativa basada només en pes i alçada. No diferencia entre greix i massa muscular ni serveix per diagnosticar l’estat de salut d’una persona.</small>';
+}
+</script></body></html>
