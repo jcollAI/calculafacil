@@ -4,9 +4,9 @@ CANVIS
 47 guies amb fórmules, exemples i limitacions; navegació uniforme; enllaços de portada presents sense JavaScript; canonical, sitemap i robots del domini públic; etiquetes accessibles; validació bàsica abans de calcular.
 
 PENDENT DEL TITULAR ABANS DE DEMANAR LA REVISIÓ D’ADSENSE
-1. Correu públic autoritzat i publicat: joancoll2007@gmail.com. Encara cal confirmar les dades legals del titular que correspongui publicar.
-2. Copiar de Compte > Configuració > Informació del compte l’identificador pub- amb 16 dígits. El codi anterior pub-509335397390800 té 15 dígits i no es pot completar per deducció.
-3. A AdSense, registrar calculafacil-seven.vercel.app i seguir les instruccions de verificació del compte. Amb l’ID correcte, afegir la meta google-adsense-account segons les instruccions de Google i actualitzar ads.txt amb la línia exacta.
+1. Correu públic autoritzat i publicat: joancoll2007@gmail.com. Titular confirmat: Joan Coll Serrat.
+2. Identificador confirmat per la captura del compte: pub-509335397390800. Meta de verificació i ads.txt publicats amb aquest valor exacte.
+3. A AdSense, registrar calculafacil-seven.vercel.app i seguir les instruccions de verificació del compte. L’ID de la captura ja està incorporat a la meta google-adsense-account i a ads.txt.
 4. A Privacitat i missatgeria, crear i publicar el missatge de normatives europees de Google o una CMP certificada. Facilitar el fragment oficial de configuració. site-config.js deixa la publicitat desactivada fins que això estigui complet i comprovat.
 5. Abans d’activar publicitat: actualitzar la política de privacitat/cookies amb els serveis reals, comprovar acceptar/rebutjar/revocar i provar l’estat sense consentiment.
 6. Demanar la revisió d’AdSense. Google pren la decisió; les millores no garanteixen l’aprovació.
