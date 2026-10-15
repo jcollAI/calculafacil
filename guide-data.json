@@ -1,0 +1,425 @@
+{
+  "percentatge": [
+    "Percentatges",
+    "Compara una part amb un total. Escriu la quantitat que vols comparar a A i el total de referència a B. És útil per interpretar enquestes, assistència o objectius assolits.",
+    "Percentatge = A ÷ B × 100. El total B ha de ser diferent de zero.",
+    "Si han vingut 18 persones de les 24 inscrites, posa A = 18 i B = 24: 18 ÷ 24 × 100 = 75%.",
+    "El resultat expressa quantes parts de cada cent representa A. No és el mateix calcular quin percentatge és A de B que calcular el 20% d’un import.",
+    "Pot sortir més del 100%?",
+    "Sí. Si A és més gran que B, el percentatge supera 100. Per exemple, 150 respecte de 100 és 150%."
+  ],
+  "descompte": [
+    "Descompte",
+    "Calcula el preu després d’aplicar una rebaixa i els diners que t’estalvies. Introdueix el preu original i el percentatge anunciat, sense el símbol %.",
+    "Estalvi = preu × descompte ÷ 100. Preu final = preu − estalvi.",
+    "Una peça de 80 € amb un 25% de descompte costa 60 €: estalvies 80 × 25 ÷ 100 = 20 €.",
+    "Dos descomptes successius no se sumen directament: un 20% i després un 10% sobre 100 € deixen un preu de 72 €, no de 70 €.",
+    "Què inclou el preu final?",
+    "Només la rebaixa indicada. Afegeix a part transport o altres despeses de la compra."
+  ],
+  "iva": [
+    "IVA",
+    "Afegeix el percentatge d’IVA que indiquis a un import sense impostos. Escriu la base imposable i el tipus en percentatge; l’eina no tria el tipus aplicable per tu.",
+    "Total amb IVA = base × (1 + tipus ÷ 100). Quota d’IVA = base × tipus ÷ 100.",
+    "Amb una base de 100 € i un tipus del 21%, el total és 121 € i la quota d’IVA és 21 €.",
+    "Aquesta eina afegeix IVA; no l’extreu d’un total. Per recuperar la base d’un total de 121 € al 21%, divideix 121 entre 1,21 i obtindràs 100 €.",
+    "Serveix per determinar quin tipus d’IVA em correspon?",
+    "No. El percentatge l’introdueixes tu segons el producte i la normativa aplicable. No calcula obligacions fiscals."
+  ],
+  "regla-tres": [
+    "Regla de tres directa",
+    "Resol una proporció: si a una quantitat A li correspon B, quina quantitat correspon a C? Mantén les unitats i l’ordre dels valors.",
+    "X = B × C ÷ A. La relació ha de ser directament proporcional i A no pot ser zero.",
+    "Si 3 kg de fruita costen 6 €, 5 kg costen 6 × 5 ÷ 3 = 10 €. Introdueix A = 3, B = 6 i C = 5.",
+    "La regla directa pressuposa un preu o ritme constant. No és adequada si hi ha descomptes per volum o si les magnituds són inversament proporcionals.",
+    "Serveix per calcular el temps amb més treballadors?",
+    "No directament: si més treballadors redueixen el temps, la relació és inversa i cal una fórmula diferent."
+  ],
+  "nota": [
+    "Nota mitjana",
+    "Calcula la mitjana aritmètica de tres notes amb el mateix pes. Escriu les notes en la mateixa escala, per exemple totes sobre 10.",
+    "Mitjana = (nota 1 + nota 2 + nota 3) ÷ 3.",
+    "Les notes 6, 7 i 8 donen (6 + 7 + 8) ÷ 3 = 7. Un zero també compta com una nota i no s’ha de deixar el camp buit.",
+    "La calculadora dona el mateix pes a les tres notes. Si un examen val més que un altre, utilitza la mitjana ponderada.",
+    "És la nota oficial de l’assignatura?",
+    "Només si coincideix amb els criteris d’avaluació del centre. Mínims, recuperacions i arrodoniments poden canviar-la."
+  ],
+  "edat": [
+    "Edat entre dues dates",
+    "Compara una data inicial, com el dia de naixement, amb una data de referència. Pots canviar la segona data per saber l’edat en un dia concret.",
+    "Es comparen anys, mesos i dies de calendari, tenint en compte la durada variable dels mesos. El total de dies es calcula entre les dues dates.",
+    "Del 15 de gener de 2000 al 15 de març de 2026 hi ha 26 anys i 2 mesos. La data final ha de ser posterior o igual a la inicial.",
+    "Els mesos no equivalen sempre a 30 dies. El tractament d’aniversaris a final de mes segueix el criteri de calendari explicat pel resultat, no un termini legal.",
+    "Puc posar una data futura?",
+    "Sí, si és posterior a la data inicial. Això permet saber quina edat tindràs en una data determinada."
+  ],
+  "prestec": [
+    "Quota de préstec",
+    "Estima una quota mensual constant a partir del capital prestat, un tipus nominal anual i el nombre de mesos. Escriu el termini en mesos, no en anys.",
+    "Quota = P × i ÷ (1 − (1 + i)^(−n)), on i = tipus anual ÷ 1.200 i n són els mesos. Si el tipus és zero, quota = P ÷ n.",
+    "Per 12.000 €, un tipus anual del 0% i 24 mesos, la quota és de 500 € al mes. Amb interès positiu, la quota incorpora capital i interessos.",
+    "La simulació pressuposa quotes mensuals i tipus constant. No incorpora comissions, assegurances ni altres despeses i no calcula la TAE.",
+    "Què passa si el tipus canvia?",
+    "Cal tornar a simular amb el capital pendent, el nou tipus i els mesos restants. El resultat no és una oferta bancària."
+  ],
+  "interes": [
+    "Interès compost",
+    "Simula com evoluciona un capital inicial si els rendiments es reinverteixen un cop l’any. Introdueix capital, percentatge anual i anys.",
+    "Capital final = capital inicial × (1 + rendiment anual ÷ 100)^anys.",
+    "Amb 1.000 €, un rendiment hipotètic del 5% i 2 anys: 1.000 × 1,05² = 1.102,50 €. El segon any també genera rendiment sobre els 50 € del primer.",
+    "El model no inclou aportacions mensuals, impostos, comissions ni inflació. Un percentatge constant és una hipòtesi matemàtica, no una previsió ni un rendiment garantit.",
+    "Es pot perdre capital?",
+    "Sí. Un rendiment negatiu redueix el capital, i els mercats no ofereixen un percentatge fix cada any."
+  ],
+  "imc": [
+    "Índex de massa corporal",
+    "Relaciona pes i alçada per obtenir un indicador general per a adults. Introdueix el pes en quilograms i l’alçada en centímetres.",
+    "IMC = pes en kg ÷ (alçada en metres)². Per passar de centímetres a metres, divideix entre 100.",
+    "Per 70 kg i 175 cm: 70 ÷ 1,75² = 22,86, que s’arrodoneix a 22,9. El valor es troba dins de l’interval habitual de referència 18,5–24,9.",
+    "L’IMC no distingeix múscul i greix ni és un diagnòstic. Les categories d’adults no s’apliquen directament a infants, adolescents o embarassades.",
+    "Un resultat dins del rang garanteix bona salut?",
+    "No. És una mesura parcial que s’ha d’interpretar amb la història i la situació de cada persona."
+  ],
+  "conversor": [
+    "Quilòmetres a milles",
+    "Converteix una distància expressada en quilòmetres a milles terrestres. Escriu només el valor numèric de la distància.",
+    "Milles = quilòmetres ÷ 1,609344. Una milla terrestre equival exactament a 1,609344 km.",
+    "Una distància de 10 km equival aproximadament a 6,214 milles. Si una cursa marca 5 km, són aproximadament 3,107 milles.",
+    "Aquesta eina converteix només de quilòmetres a milles terrestres. No utilitza milles nàutiques ni converteix automàticament altres unitats.",
+    "Com faig la conversió inversa?",
+    "Multiplica les milles per 1,609344 per obtenir quilòmetres."
+  ],
+  "combustible": [
+    "Cost de combustible",
+    "Estima els litres i el cost d’un trajecte amb la distància, el consum mitjà del vehicle i el preu per litre. Inclou tota la distància si fas anada i tornada.",
+    "Litres = km × consum en L/100 km ÷ 100. Cost = litres × preu per litre.",
+    "Un viatge de 200 km, amb un consum de 6 L/100 km i un preu de 1,60 €/L, necessita 12 litres i costa 19,20 €.",
+    "El consum varia amb trànsit, velocitat, càrrega i carretera. El resultat no inclou peatges, aparcament, assegurança ni desgast del vehicle.",
+    "He de posar la distància d’anada o la total?",
+    "La total del trajecte que vols pagar. Per una anada de 100 km i la mateixa tornada, escriu 200 km."
+  ],
+  "dies": [
+    "Dies entre dates",
+    "Calcula la separació en dies entre dues dates de calendari. És útil per comparar períodes o preparar una planificació sense comptar hores.",
+    "Es calcula la diferència absoluta entre les dates en dies. Dues dates iguals tenen una diferència de zero dies.",
+    "De l’1 de gener al 10 de gener hi ha 9 dies de diferència. Si vols comptar tots dos dies com a dies d’una activitat, el recompte inclusiu seria 10.",
+    "La diferència entre dates no equival necessàriament a dies laborables. Per a terminis administratius, comprova les regles oficials de còmput.",
+    "Importa l’ordre de les dates?",
+    "Aquesta eina mostra la distància absoluta; posar les dates a l’inrevés dona el mateix nombre de dies."
+  ],
+  "hipoteca": [
+    "Quota d’hipoteca",
+    "Estima una mensualitat amb capital, tipus nominal anual i termini en anys. Converteix internament els anys a quotes mensuals.",
+    "Quota = P × i ÷ (1 − (1 + i)^(−n)), amb i = tipus anual ÷ 1.200 i n = anys × 12.",
+    "Una hipoteca hipotètica de 120.000 € al 0% durant 20 anys dona 240 quotes de 500 €. Amb un tipus del 3%, la quota seria aproximadament 665,52 €.",
+    "Segueix el sistema francès amb tipus constant. No inclou compra de l’habitatge, impostos, comissions, assegurances ni vinculacions; no és una comparació de TAE.",
+    "La quota d’una hipoteca variable serà sempre aquesta?",
+    "No. Les revisions del tipus poden modificar-la. El simulador només conserva el tipus que hi introdueixes."
+  ],
+  "estalvi": [
+    "Objectiu d’estalvi",
+    "Reparteix entre diversos mesos la quantitat que et falta per assolir una meta. Introdueix l’objectiu, l’import que ja tens i el termini disponible.",
+    "Estalvi mensual = màxim(0, objectiu − estalvi actual) ÷ mesos.",
+    "Si vols arribar a 2.000 €, ja tens 500 € i disposes de 10 mesos, et falten 1.500 €: has de reservar 150 € cada mes.",
+    "No es pressuposen interessos ni rendibilitat. El resultat és una distribució uniforme; comprova que encaixa amb les despeses i ingressos del teu pressupost.",
+    "I si ja tinc més diners que l’objectiu?",
+    "L’import pendent és zero. La calculadora no et proposa gastar ni invertir l’excedent."
+  ],
+  "inflacio": [
+    "Efecte de la inflació",
+    "Estima quin preu futur equivaldria a un import actual si una taxa d’inflació hipotètica es repetís cada any.",
+    "Preu futur = import actual × (1 + taxa anual ÷ 100)^anys.",
+    "Un producte de 100 € amb una inflació constant del 3% durant 2 anys passaria a costar 106,09 €. L’augment acumulat és de 6,09 €.",
+    "La taxa la tries tu; l’eina no consulta l’IPC ni prediu els preus. La cistella personal i els preus de cada producte poden evolucionar de manera diferent.",
+    "El càlcul mostra el valor actual dels diners futurs?",
+    "No. Mostra el preu equivalent futur. Per descomptar inflació d’un import futur cal dividir pel factor acumulat."
+  ],
+  "sou-net": [
+    "Sou net estimat",
+    "Aplica dos percentatges de deducció a un sou brut: la retenció d’IRPF i una cotització indicada per tu. Mantén el mateix període per al brut i el net.",
+    "Net estimat = brut × (1 − (IRPF + cotització) ÷ 100).",
+    "Amb 2.000 € bruts, una retenció introduïda del 12% i una cotització del 6%, el resultat és 1.640 €. S’han descomptat 360 €.",
+    "És una simplificació, no un càlcul oficial de nòmina. No determina l’IRPF, les bases, els topalls, les pagues extres ni circumstàncies personals.",
+    "Calcula automàticament els impostos segons la meva situació?",
+    "No. Els percentatges els has d’indicar. Per una nòmina real cal revisar les dades amb l’empresa o una gestoria."
+  ],
+  "regla-50-30-20": [
+    "Control d’economia",
+    "Organitza els ingressos mensuals entre necessitats, desitjos i estalvi. Comença amb 50/30/20 o modifica els percentatges perquè reflecteixin la teva situació.",
+    "Import de cada partida = ingressos × percentatge ÷ 100. Els tres percentatges han de sumar 100%.",
+    "Amb 1.500 € i un repartiment 50/30/20: 750 € per necessitats, 450 € per desitjos i 300 € per estalvi.",
+    "El repartiment és una pauta flexible. Si el lloguer o altres obligacions ocupen més del 50%, ajusta els percentatges en lloc de forçar un pressupost irreal.",
+    "Es connecta al meu banc?",
+    "No. Només reparteix l’import que introdueixes i no llegeix moviments ni executa transferències."
+  ],
+  "mitjana-ponderada": [
+    "Mitjana ponderada",
+    "Combina notes que tenen pesos diferents. Escriu una llista de notes i una de pesos en el mateix ordre; cada nota ha de tenir el seu pes corresponent.",
+    "Mitjana = suma de (nota × pes) ÷ suma dels pesos.",
+    "Amb notes 6 i 8 i pesos 30 i 70, el resultat és (6 × 30 + 8 × 70) ÷ 100 = 7,4.",
+    "Els pesos són relatius: 3 i 7 donen el mateix resultat que 30 i 70. No barregis escales de notes i comprova les normes del centre.",
+    "Han de sumar 100 els pesos?",
+    "No, el càlcul divideix per la suma total. Els pesos han de ser no negatius i almenys un ha de ser positiu."
+  ],
+  "nota-final": [
+    "Nota final",
+    "Combina la nota contínua amb la de l’examen. Indica quin percentatge representa la contínua; la resta del pes s’assigna a l’examen.",
+    "Final = contínua × pes ÷ 100 + examen × (1 − pes ÷ 100).",
+    "Amb una contínua de 7 que pesa el 40% i un examen de 6, la final és 7 × 0,4 + 6 × 0,6 = 6,4.",
+    "Una assignatura pot exigir aprovar l’examen abans de fer mitjana. Aquesta eina no aplica mínims o criteris de recuperació del centre.",
+    "Quin pes he d’introduir?",
+    "El de la contínua. Si l’examen pesa el 60%, introdueix 40 al camp del pes de la contínua."
+  ],
+  "nota-necessaria": [
+    "Nota necessària",
+    "Calcula quina nota d’examen et permetria arribar a un objectiu final. Introdueix la nota actual, el pes de l’examen i la nota objectiu.",
+    "Examen necessari = (objectiu − actual × (1 − pes de l’examen)) ÷ pes de l’examen. El pes s’expressa com una fracció entre 0 i 1.",
+    "Amb una nota actual de 6, un examen que pesa el 50% i un objectiu de 7, necessites un 8: (7 − 6 × 0,5) ÷ 0,5 = 8.",
+    "Si el resultat supera 10, l’objectiu no és possible en una escala de 0 a 10 amb aquestes dades. Comprova possibles mínims obligatoris.",
+    "Un resultat negatiu vol dir que puc no presentar-me?",
+    "No. Només indica que la mitjana matemàtica ja arriba a l’objectiu; el centre pot exigir presentar-s’hi o obtenir una nota mínima."
+  ],
+  "encerts": [
+    "Percentatge d’encerts",
+    "Resumeix un test indicant total, respostes correctes, incorrectes i en blanc. Pots activar una penalització per cada resposta incorrecta.",
+    "Percentatge d’encerts = correctes ÷ total × 100. Amb penalització: puntuació neta = correctes − errors × penalització.",
+    "En un test de 20 preguntes, amb 15 correctes, 4 incorrectes i 1 en blanc, tens un 75% d’encerts. Si cada error resta 0,25, la puntuació neta és 14 sobre 20.",
+    "Les tres quantitats han de sumar el total. La nota equivalent sobre 10 no substitueix els criteris reals del professor o de la convocatòria.",
+    "Les preguntes en blanc resten?",
+    "En aquest model no. Si la prova utilitza una regla diferent, cal calcular-la segons les seves bases."
+  ],
+  "fraccions": [
+    "Operacions amb fraccions",
+    "Suma, resta, multiplica o divideix dues fraccions a partir dels seus numeradors i denominadors. Utilitza enters; el resultat mostra les quatre operacions.",
+    "Suma: a/b + c/d = (ad + bc)/bd. Producte: ac/bd. Divisió: ad/bc, sempre que la segona fracció no sigui zero.",
+    "1/2 + 1/3 = (3 + 2)/6 = 5/6. No se sumen directament els denominadors.",
+    "Un denominador no pot ser zero. El resultat es simplifica dividint numerador i denominador pel seu màxim comú divisor.",
+    "Puc dividir per 0/5?",
+    "No. Tot i tenir denominador vàlid, la fracció 0/5 val zero i no es pot usar com a divisor."
+  ],
+  "potencies": [
+    "Potències",
+    "Calcula una base elevada a un exponent. Serveix per productes repetits, creixements geomètrics i exponents negatius.",
+    "a^n representa multiplicar a per si mateix n vegades quan n és un enter positiu. Per a diferent de zero, a^(−n) = 1/a^n.",
+    "2^5 = 32. Amb base 2 i exponent −3, el resultat és 1/8 = 0,125.",
+    "Algunes combinacions no tenen resultat real, com una base negativa elevada a 0,5. Els valors molt grans poden superar el rang del navegador.",
+    "Què passa amb un exponent zero?",
+    "Una base no nul·la elevada a zero dona 1. L’expressió 0^0 té interpretacions diferents segons el context matemàtic."
+  ],
+  "arrels": [
+    "Arrels",
+    "Troba una arrel quadrada, cúbica o d’un altre ordre enter. Indica el nombre i l’ordre; ordre 2 correspon a l’arrel quadrada.",
+    "L’arrel d’ordre n de x és el valor r que compleix r^n = x.",
+    "L’arrel quadrada de 81 és 9 perquè 9² = 81. L’arrel cúbica de −8 és −2 perquè (−2)³ = −8.",
+    "Una arrel d’ordre parell d’un nombre negatiu no té resultat real. L’ordre ha de ser un enter igual o superior a 2.",
+    "Es mostren totes les solucions d’una equació?",
+    "No. L’arrel quadrada principal de 9 és 3, encara que l’equació x² = 9 tingui dues solucions: 3 i −3."
+  ],
+  "equacio-segon-grau": [
+    "Equació de segon grau",
+    "Resol una equació en la forma ax² + bx + c = 0. Escriu els tres coeficients amb el signe corresponent, inclosos els zeros.",
+    "Discriminant D = b² − 4ac. Si D és no negatiu, x = (−b ± √D) ÷ (2a). El coeficient a no pot ser zero.",
+    "Per x² − 5x + 6 = 0, introdueix a = 1, b = −5, c = 6. D = 1 i les solucions són 3 i 2.",
+    "Si D és negatiu, l’eina indica que no hi ha solucions reals. No mostra arrels complexes. Amb D = 0 hi ha una arrel doble.",
+    "Què faig si a és zero?",
+    "Ja no és una equació de segon grau. Cal resoldre l’equació lineal bx + c = 0."
+  ],
+  "mediana": [
+    "Mediana",
+    "Troba el valor central d’una llista ordenada. Escriu els nombres separats per comes; per als decimals utilitza punt.",
+    "Ordena els valors de menor a major. Si n és senar, pren el del mig; si n és parell, calcula la mitjana dels dos centrals.",
+    "La llista 2, 3, 8, 10 té mediana (3 + 8) ÷ 2 = 5,5. La llista 2, 3, 100 té mediana 3.",
+    "No és la mateixa mesura que la mitjana. Un valor extrem pot desplaçar molt la mitjana mentre la mediana continua representant la posició central.",
+    "Cal ordenar la llista abans?",
+    "No. La calculadora l’ordena numèricament i mostra l’ordre utilitzat perquè puguis comprovar-lo."
+  ],
+  "calculadora": [
+    "Calculadora",
+    "Resol operacions bàsiques amb suma, resta, multiplicació, divisió, parèntesis i percentatges. Pots utilitzar els botons o el teclat.",
+    "La multiplicació i la divisió es resolen abans de la suma i la resta. Els parèntesis permeten canviar l’ordre. El símbol % divideix el valor anterior entre 100.",
+    "2 + 3 × 4 dona 14, mentre que (2 + 3) × 4 dona 20. Per obtenir el 20% de 80, escriu 80 × 20%: el resultat és 16.",
+    "La tecla % no imita tots els comportaments de les calculadores comercials: 100 + 10% representa 100 + 0,1. No es pot dividir entre zero.",
+    "Quines tecles puc fer servir?",
+    "Enter calcula, Esc esborra tota l’operació i Retrocés elimina l’últim caràcter. Per als decimals també pots utilitzar la coma."
+  ],
+  "calculadora-cientifica": [
+    "Calculadora científica",
+    "Treballa amb trigonometria, logaritmes, potències, factorial i constants. Les funcions com sin o √ s’apliquen al valor o a l’expressió que ja has escrit.",
+    "En mode DEG els angles són graus; en mode RAD són radians. log és base 10, mentre que ln és base e. El factorial n! multiplica els enters d’1 a n.",
+    "En mode DEG, escriu 30 i prem sin: obtindràs 0,5. Si escrius 100 i prems log, obtindràs 2 perquè 10² = 100.",
+    "Comprova el mode angular abans de fer trigonometria. No s’accepta el logaritme real d’un nombre no positiu ni el factorial de negatius o decimals.",
+    "Com calculo una potència?",
+    "Escriu la base, prem xʸ, escriu l’exponent i prem =. Per exemple, 2 xʸ 3 dona 8."
+  ],
+  "preu-unitat": [
+    "Preu per unitat",
+    "Divideix el preu total per la quantitat de producte. Expressa la quantitat en la unitat amb què vols comparar, com kg, litres o peces.",
+    "Preu unitari = preu total ÷ quantitat. La quantitat ha de ser positiva.",
+    "Un envàs de 750 g que costa 3 € té un preu de 3 ÷ 0,75 = 4 €/kg. Introdueix 0,75 si vols el resultat per quilogram.",
+    "El resultat té la unitat de la quantitat que has introduït. Si escrius 750 en comptes de 0,75, obtindràs euros per gram, no per quilogram.",
+    "Inclou les ofertes 2×1?",
+    "Només si poses el preu total que pagues i la quantitat total que reps amb l’oferta."
+  ],
+  "comparar-ofertes": [
+    "Comparar dues ofertes",
+    "Compara dues opcions a partir de preu i quantitat. Converteix primer les quantitats a la mateixa unitat.",
+    "Preu unitari A = preu A ÷ quantitat A. Preu unitari B = preu B ÷ quantitat B. Guanya el valor més baix.",
+    "L’opció A costa 3 € per 0,75 kg: 4 €/kg. L’opció B costa 4,50 € per 1,5 kg: 3 €/kg. B és més econòmica per quilogram.",
+    "El millor preu per unitat no garanteix millor qualitat ni que necessitis un envàs més gran. Compara productes equivalents.",
+    "Puc comparar litres amb mil·lilitres?",
+    "Sí, després de posar-los en la mateixa unitat: 500 mL són 0,5 L. No barregis 500 i 1 com si fossin unitats iguals."
+  ],
+  "combustible-mensual": [
+    "Combustible mensual",
+    "Estima la despesa recurrent de combustible segons els quilòmetres que recorres en un mes, el consum mitjà i el preu per litre.",
+    "Cost mensual = km mensuals × consum ÷ 100 × preu per litre. Cost anual aproximat = cost mensual × 12.",
+    "Amb 1.000 km al mes, 6 L/100 km i 1,60 €/L, gastaràs 60 litres i 96 € al mes. El mateix patró durant 12 mesos suma 1.152 €.",
+    "La projecció anual repeteix exactament el mateix mes. Vacances, preus i canvis d’ús poden fer variar la despesa. No inclou altres costos del cotxe.",
+    "És millor posar el consum oficial o el real?",
+    "Per planificar la teva despesa, el consum mitjà que observes en trajectes semblants acostuma a representar millor el teu ús."
+  ],
+  "viatge-persona": [
+    "Cost del viatge per persona",
+    "Reparteix el cost estimat del combustible entre les persones que hi contribueixen. Escriu la distància total i un nombre enter de persones.",
+    "Cost total = km × consum ÷ 100 × preu. Cost individual = cost total ÷ persones.",
+    "Amb 200 km, 6 L/100 km, combustible a 1,60 €/L i 4 persones, el cost total és 19,20 € i a cadascú li corresponen 4,80 €.",
+    "El repartiment és a parts iguals i només inclou combustible. Acordeu a part peatges, aparcament o altres conceptes.",
+    "Compto també qui condueix?",
+    "El camp indica quantes persones paguen. Decideix amb el grup si el conductor participa en el repartiment."
+  ],
+  "hores-minuts": [
+    "Sumar hores i minuts",
+    "Suma dues durades, com dos torns o dues sessions d’estudi. Introdueix les hores i els minuts de cada període.",
+    "Minuts totals = hores 1 × 60 + minuts 1 + hores 2 × 60 + minuts 2. Després es converteix el total a hores i minuts.",
+    "2 h 45 min + 1 h 30 min són 255 minuts, és a dir, 4 h 15 min. Els 75 minuts de la suma es normalitzen.",
+    "Treballa amb durades, no amb hores d’entrada i sortida. Una durada de 27 hores continua sent 27 hores i no una hora del dia.",
+    "Puc escriure 90 minuts?",
+    "Sí, la suma els converteix en 1 hora i 30 minuts. Utilitza valors enters no negatius."
+  ],
+  "dies-laborables": [
+    "Dies de dilluns a divendres",
+    "Compta els dies entre dues dates que cauen de dilluns a divendres. El recompte inclou la data inicial i la final si són entre setmana.",
+    "Es recorren els dies del període i es descarten dissabtes i diumenges. No es consulta un calendari de festius.",
+    "De dilluns a divendres de la mateixa setmana hi ha 5 dies comptats. Si tots dos extrems són el mateix dilluns, el resultat és 1.",
+    "El nom no implica dies hàbils oficials: no es resten festius locals, autonòmics o estatals, ni vacances d’empresa.",
+    "Serveix per calcular un termini administratiu?",
+    "Només com a orientació. Els terminis oficials poden tenir regles d’inici, venciment i festius diferents."
+  ],
+  "sumar-dies": [
+    "Sumar o restar dies",
+    "Obté una data a partir d’un dia inicial i un desplaçament en dies. Escriu un nombre positiu per avançar i negatiu per retrocedir.",
+    "Data final = data inicial + nombre enter de dies naturals. El calendari ajusta automàticament mesos i anys.",
+    "Si parteixes del 28 de febrer de 2024 i hi sumes 2 dies, obtens l’1 de març de 2024: aquell any el febrer té 29 dies.",
+    "Es compten dies naturals, inclosos caps de setmana i festius. No interpreta terminis legals ni horaris.",
+    "He de comptar el dia inicial?",
+    "El desplaçament zero conserva la data inicial. Sumar un dia porta al dia següent."
+  ],
+  "compte-enrere": [
+    "Compte enrere",
+    "Mostra quant temps queda fins a una data i hora futures segons el rellotge del teu dispositiu. Tria l’objectiu al calendari.",
+    "Temps pendent = instant objectiu − instant actual, desglossat en dies, hores i minuts.",
+    "Si són les 10:00 i poses les 12:30 del mateix dia, el resultat és 0 dies, 2 hores i 30 minuts.",
+    "És una fotografia del temps pendent quan prems Calcular; no crea una alarma ni una notificació. El navegador interpreta la data en la zona horària del dispositiu.",
+    "S’actualitza tot sol?",
+    "No. Torna a prémer Calcular per actualitzar el temps restant."
+  ],
+  "ritme-carrera": [
+    "Ritme de carrera",
+    "Converteix distància i temps total en ritme per quilòmetre i velocitat mitjana. Introdueix quilòmetres, hores, minuts i segons.",
+    "Ritme = segons totals ÷ km. Velocitat = km ÷ hores totals.",
+    "Recórrer 5 km en 25 minuts equival a 5:00 min/km i 12 km/h. Un ritme més baix en min/km vol dir córrer més ràpid.",
+    "És una mitjana del recorregut. Les pauses, desnivell i canvis de ritme no apareixen per separat. Utilitza una distància positiva i un temps superior a zero.",
+    "El ritme és el mateix que la velocitat?",
+    "Expressen la mateixa relació de manera inversa: minuts per quilòmetre davant de quilòmetres per hora."
+  ],
+  "calories": [
+    "Calories diàries orientatives",
+    "Estima la despesa energètica de manteniment en adults a partir de pes, alçada, edat, un paràmetre de la fórmula i un factor d’activitat.",
+    "Mifflin-St Jeor: 10 × kg + 6,25 × cm − 5 × anys + constant. La constant és +5 o −161 segons el paràmetre seleccionat. El manteniment es calcula multiplicant pel factor d’activitat.",
+    "Amb 70 kg, 175 cm, 30 anys i la constant +5, el basal estimat és 1.648,75 kcal/dia. Amb factor 1,55, el manteniment estimat és 2.556 kcal/dia.",
+    "La despesa individual pot diferir molt. No és una pauta dietètica ni s’ha d’aplicar a menors, embarassades o situacions clíniques sense valoració professional.",
+    "El factor d’activitat és una mesura exacta?",
+    "No. És una aproximació introduïda per l’usuari, no una mesura amb sensors ni un resultat del treball original."
+  ],
+  "pes-ideal": [
+    "Rang de pes segons IMC",
+    "Converteix l’interval d’IMC 18,5–24,9 en un interval de pes per a una alçada adulta. El nom de l’arxiu no implica que hi hagi un pes ideal únic.",
+    "Pes inferior = 18,5 × alçada². Pes superior = 24,9 × alçada², amb l’alçada en metres.",
+    "Per 175 cm, 18,5 × 1,75² = 56,7 kg i 24,9 × 1,75² = 76,3 kg aproximadament.",
+    "És només la traducció matemàtica d’un interval d’IMC. No avalua composició corporal, salut, context clínic ni objectius personals i no prescriu canviar de pes.",
+    "Aquest interval serveix per a qualsevol persona?",
+    "No. Les referències d’IMC d’adults no s’han d’aplicar directament a infants, adolescents ni embarassades."
+  ],
+  "zones-cardiaques": [
+    "Zones de freqüència cardíaca estimades",
+    "Mostra percentatges d’una freqüència màxima estimada per edat. És una aproximació general per entendre el càlcul de zones, no una prova d’esforç.",
+    "FC màxima estimada = 220 − edat. Les cinc bandes corresponen al 50–60%, 60–70%, 70–80%, 80–90% i 90–100% d’aquesta estimació.",
+    "Amb 30 anys, el model dona 190 bpm de màxima estimada. El 60–70% equival aproximadament a 114–133 bpm.",
+    "La fórmula pot diferir de la freqüència real i les zones no són una prescripció d’intensitat. Medicació, condició física i malalties poden canviar la interpretació.",
+    "Puc entrenar al màxim que indica?",
+    "La xifra no estableix un límit segur personal. Si necessites zones d’entrenament individuals, cal una valoració adequada."
+  ],
+  "conversor-longitud": [
+    "Conversor de longitud",
+    "Converteix entre m i km. Escriu el valor i tria la direcció; l’opció inicial converteix de m a km.",
+    "De m a km: divideix el valor entre 1000. Per tornar de km a m, multiplica pel mateix factor.",
+    "Si introdueixes 1500 m en la primera direcció, obtens 1,5 km. La segona direcció permet recuperar la quantitat original.",
+    "La longitud escala de manera lineal; no utilitzis aquest factor per convertir àrees.",
+    "Per què pot aparèixer un resultat arrodonit?",
+    "El navegador mostra fins a vuit decimals. En valors molt petits, una part del resultat pot quedar oculta per l’arrodoniment de visualització."
+  ],
+  "conversor-pes": [
+    "Conversor de pes",
+    "Converteix entre kg i g. Escriu el valor i tria la direcció; l’opció inicial converteix de kg a g.",
+    "De kg a g: divideix el valor entre 0,001. Per tornar de g a kg, multiplica pel mateix factor.",
+    "Si introdueixes 2 kg en la primera direcció, obtens 2.000 g. La segona direcció permet recuperar la quantitat original.",
+    "Quilograms i grams són unitats de massa; no equivalen a litres sense conèixer la densitat.",
+    "Per què pot aparèixer un resultat arrodonit?",
+    "El navegador mostra fins a vuit decimals. En valors molt petits, una part del resultat pot quedar oculta per l’arrodoniment de visualització."
+  ],
+  "conversor-velocitat": [
+    "Conversor de velocitat",
+    "Converteix entre km/h i m/s. Escriu el valor i tria la direcció; l’opció inicial converteix de km/h a m/s.",
+    "De km/h a m/s: divideix el valor entre 3,6. Per tornar de m/s a km/h, multiplica pel mateix factor.",
+    "Si introdueixes 36 km/h en la primera direcció, obtens 10 m/s. La segona direcció permet recuperar la quantitat original.",
+    "Aquesta conversió no incorpora el temps que es triga a recórrer una distància.",
+    "Per què pot aparèixer un resultat arrodonit?",
+    "El navegador mostra fins a vuit decimals. En valors molt petits, una part del resultat pot quedar oculta per l’arrodoniment de visualització."
+  ],
+  "conversor-area": [
+    "Conversor de àrea",
+    "Converteix entre m² i km². Escriu el valor i tria la direcció; l’opció inicial converteix de m² a km².",
+    "De m² a km²: divideix el valor entre 1000000. Per tornar de km² a m², multiplica pel mateix factor.",
+    "Si introdueixes 1000000 m² en la primera direcció, obtens 1 km². La segona direcció permet recuperar la quantitat original.",
+    "En àrees el factor és al quadrat: 1 km² són un milió de m², no mil.",
+    "Per què pot aparèixer un resultat arrodonit?",
+    "El navegador mostra fins a vuit decimals. En valors molt petits, una part del resultat pot quedar oculta per l’arrodoniment de visualització."
+  ],
+  "conversor-volum": [
+    "Conversor de volum",
+    "Converteix entre L i mL. Escriu el valor i tria la direcció; l’opció inicial converteix de L a mL.",
+    "De L a mL: divideix el valor entre 0,001. Per tornar de mL a L, multiplica pel mateix factor.",
+    "Si introdueixes 1,5 L en la primera direcció, obtens 1.500 mL. La segona direcció permet recuperar la quantitat original.",
+    "La conversió és entre volums, no entre volum i massa. Un litre no pesa sempre un quilogram.",
+    "Per què pot aparèixer un resultat arrodonit?",
+    "El navegador mostra fins a vuit decimals. En valors molt petits, una part del resultat pot quedar oculta per l’arrodoniment de visualització."
+  ],
+  "conversor-dades": [
+    "Conversor de dades",
+    "Converteix entre GB i MB. Escriu el valor i tria la direcció; l’opció inicial converteix de GB a MB.",
+    "De GB a MB: divideix el valor entre 0,001. Per tornar de MB a GB, multiplica pel mateix factor.",
+    "Si introdueixes 2 GB en la primera direcció, obtens 2.000 MB. La segona direcció permet recuperar la quantitat original.",
+    "S’utilitza el sistema decimal: 1 GB = 1.000 MB. En binari, 1 GiB = 1.024 MiB i són unitats diferents.",
+    "Per què pot aparèixer un resultat arrodonit?",
+    "El navegador mostra fins a vuit decimals. En valors molt petits, una part del resultat pot quedar oculta per l’arrodoniment de visualització."
+  ],
+  "conversor-temperatura": [
+    "Celsius i Fahrenheit",
+    "Converteix una temperatura entre graus Celsius i Fahrenheit. La primera direcció és de °C a °F i la segona fa la conversió inversa.",
+    "°F = °C × 9 ÷ 5 + 32. Per tornar a Celsius: °C = (°F − 32) × 5 ÷ 9.",
+    "20 °C equivalen a 68 °F. A la inversa, 32 °F equivalen a 0 °C.",
+    "La temperatura requereix un desplaçament de 32 graus a més del canvi d’escala. No n’hi ha prou amb multiplicar per un factor.",
+    "Admet temperatures negatives?",
+    "Sí. Per exemple, −40 °C i −40 °F representen la mateixa temperatura."
+  ]
+}
