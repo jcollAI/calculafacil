@@ -17,7 +17,7 @@
       }
     }
   }, true);
-  if (!config.advertisingEnabled || !/^ca-pub-\d{15,16}$/.test(config.publisherId)) return;
+  if (!config.advertisingEnabled || !/^ca-pub-\d{16}$/.test(config.publisherId)) return;
   if (button) {
     button.hidden = false;
     button.addEventListener("click", () => {
